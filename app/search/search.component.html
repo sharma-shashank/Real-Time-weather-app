@@ -1,0 +1,36 @@
+
+<section class="weather-search">
+  
+  <form #f='ngForm' (ngSubmit)='onSubmit(f)'>
+   
+    
+      <label for="city">City Name</label>
+   <input [(ngModel)] = 'location' name="location"  type="text" placeholder="Search" 
+   (input)="onSearchLocation(input.value)"  required #input >
+   
+   <button type="submit" class="btn btn-success">Search</button>
+  </form>
+ <div>
+       <span class="info">City Found:</span> {{ data?.name }} 
+  </div>
+  
+ </section>
+<div *ngIf="wheatherItem">
+<div class='row'>
+  <div class='col-sm-12'>
+    <div class="wheather-element">
+      <div class='col-1'>
+
+
+        <b>{{wheatherItem.name}}</b>
+        
+        <p class="info">{{wheatherItem.weather[0].main}}</p>
+      </div>
+      <div class="col-2">
+        <span class="temperature">{{wheatherItem.main.temp}} °C</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>

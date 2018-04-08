@@ -1,0 +1,12 @@
+[
+    {
+    "cityName": "London",
+    "disc": "cloudy",
+    "temperature": "14 °C"
+    },
+    {
+        "cityName": "Madrid",
+        "disc": "rainy",
+        "temperature": "20 °C"
+    }
+]

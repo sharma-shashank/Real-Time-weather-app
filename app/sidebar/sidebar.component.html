@@ -1,0 +1,37 @@
+
+
+<h3>Profiles</h3>
+
+
+  <button (click)="onSaveNew()">Saved Profiles</button>
+  
+
+  <article class="profile">
+    <h4>Profile Name</h4>
+    <p>Cities: NewYork, London</p>
+  </article>
+  <div class='row'>
+    <div class='col-sm-12'>
+      <div class="wheather-element" *ngFor='let abc of wheatherItem'>
+        <div class='col-1'>
+  
+          <a routerLink='/wheather/{{ abc.disc }}' routerLinkActive="active">
+            <b>{{abc.cityName}}</b>
+          </a>
+          <p class="info">{{abc.disc}}</p>
+        </div>
+        <div class="col-2">
+          <span class="temperature">{{abc.temperature}}</span>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+

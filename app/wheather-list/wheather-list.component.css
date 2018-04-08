@@ -1,0 +1,41 @@
+.largeTabContentContainer {
+    border: 50px solid lightseagreen;
+    padding: 20px;
+    margin: 90px;
+    background-color: #fff;
+    border-top: 50px solid lightseagreen;
+}
+.largeTabUnpaddedContentContainer {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 30px;
+    border-top: 0;
+}
+
+.largeTabContent h2:first-child,
+.largeTabContent h3:first-child {
+    margin-top: 0;
+}
+
+.largeTabContent h3 {
+    font-weight: bold;
+}
+.textdeco h2{
+    text-align: center;
+   margin-bottom: -10px;
+    font: bolder;
+    font-size: 40px;
+    
+   }
+
+.largeTabContent h4 {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/* Print version */
+@media print {
+    .largeTabContentContainer, .innerTabContentContainer { border: 0; margin: 0; padding: 10px 0; }
+    .largeTabContent { display: block; }
+}
+
